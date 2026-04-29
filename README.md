@@ -1,1 +1,93 @@
-# tribier-work
+# Professional Work — Tribier Business Intelligence
+
+> Private repositories — proprietary work.
+> This document describes the systems I have built and the technical
+> decisions behind them.
+
+## About
+
+Tribier Business Intelligence is a B2B SaaS company focused on helping
+enterprises improve their quality management processes.
+I joined as the sole Full Stack Developer in May 2023 and have since
+designed, built, and deployed multiple production applications
+autonomously across the full cycle: DB design → API → UI → deploy.
+
+---
+
+## Systems built
+
+### SEI — Strategic Integrated System
+The company's core platform. A multi-module web application that centralizes
+enterprise quality workflows.
+
+**Key modules:**
+- Meeting minutes with participant tracking and digital sign-off
+- Task management with assignment, deadlines, and status tracking
+- Role-based access control (admin / editor / viewer) via Auth0
+
+**Stack:** NestJS · Next.js · TypeScript · PostgreSQL · TypeORM · MUI · GCP
+
+---
+
+### SIM — Integrated Measurement System
+A companion platform focused on performance measurement and KPI tracking
+for enterprise clients.
+
+**Key modules:**
+- Indicator definition and periodic measurement logging
+- Data visualization dashboards
+- Automated email notifications via scheduled cron jobs (Cloud Scheduler)
+
+**Stack:** NestJS · Next.js · TypeScript · PostgreSQL · TypeORM · MUI · GCP
+
+---
+
+### Payment Service
+A standalone microservice that handles all billing logic for both SEI and SIM,
+decoupled from the main applications to allow independent scaling and maintenance.
+
+**Key features:**
+- Recurring subscription flows with MercadoPago pre-approval
+- Webhook processing for real-time payment event handling
+- Subscription status sync across both platforms
+
+**Stack:** NestJS · TypeScript · MercadoPago API · PostgreSQL · GCP Cloud Run
+
+---
+
+## Infrastructure
+
+All systems are deployed on Google Cloud Platform, configured and maintained
+independently:
+
+| Service | Usage |
+|---|---|
+| Cloud Run | Containerized backend deployments |
+| Cloud SQL | Managed PostgreSQL instances |
+| Cloud Storage | File and asset storage |
+| Cloud Scheduler | Cron jobs for automated notifications |
+
+---
+
+## Technical highlights
+
+- **Auth0 (OAuth 2.0 / OIDC):** Unified authentication across all platforms,
+  eliminating custom password management
+- **react-window virtualization:** Resolved critical frontend performance
+  bottlenecks when rendering lists of 5,000+ rows
+- **Webhook architecture:** Real-time payment event processing with
+  idempotency handling
+- **Zero unplanned downtime** across all production deployments
+
+---
+
+## Stack overview
+
+| Layer | Technologies |
+|---|---|
+| Backend | NestJS · Node.js · TypeScript · TypeORM · REST APIs |
+| Frontend | Next.js · React · MUI · RTK Query |
+| Database | PostgreSQL |
+| Auth & Payments | Auth0 · MercadoPago · JWT · Webhooks |
+| Cloud | GCP Cloud Run · Cloud SQL · Cloud Storage · Cloud Scheduler |
+| Dev practices | Git · Scrum · CI/CD · Cron Jobs |
