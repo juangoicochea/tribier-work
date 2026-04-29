@@ -75,7 +75,6 @@ All systems are deployed on Google Cloud Platform:
 |---|---|
 | Cloud Run | Containerized backend deployments |
 | Cloud SQL | Managed PostgreSQL instances |
-| Cloud Storage | File and asset storage |
 | Cloud Scheduler | Cron jobs for automated notifications |
 
 ---
