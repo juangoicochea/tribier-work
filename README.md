@@ -30,8 +30,8 @@ enterprise quality workflows.
 
 **Stack:** NestJS · Next.js · TypeScript · PostgreSQL · TypeORM · MUI · GCP
 
-![SEI Dashboard](assets/sei-dashboard.png)
-![SEI Task Management](assets/sei-tasks.png)
+![SEI Dashboard](assets/sei-dashboard.jpg)
+![SEI Task Management](assets/sei-task-managment.jpg)
 
 ---
 
@@ -46,8 +46,8 @@ for enterprise clients.
 
 **Stack:** NestJS · Next.js · TypeScript · PostgreSQL · TypeORM · MUI · GCP
 
-![SIM Dashboard](assets/sim-dashboard.png)
-![SIM Indicators](assets/sim-indicators.png)
+![SIM Dashboard](assets/sim-dashboard.jpg)
+![SIM Indicators](assets/sim-indicators.jpg)
 
 ---
 
@@ -63,7 +63,7 @@ maintenance.
 
 **Stack:** NestJS · TypeScript · MercadoPago API · PostgreSQL · GCP Cloud Run
 
-![Payment Service](assets/payment-service.png)
+![Payment Service](assets/payment-service.jpg)
 
 ---
 
