@@ -1,6 +1,6 @@
 # Professional Work — Tribier Business Intelligence
 
-> Private repositories — proprietary work.
+> Private repositories — proprietary work.  
 > This document describes the systems I have built and the technical
 > decisions behind them.
 
@@ -8,9 +8,12 @@
 
 Tribier Business Intelligence is a B2B SaaS company focused on helping
 enterprises improve their quality management processes.
-I joined as the sole Full Stack Developer in May 2023 and have since
-designed, built, and deployed multiple production applications
-autonomously across the full cycle: DB design → API → UI → deploy.
+I have been part of the development team since May 2023 as a Full Stack
+Developer, contributing across the full cycle on multiple production
+applications: DB design → API → UI → deploy.
+
+The team has built and maintained three interconnected systems, working
+across backend, frontend, infrastructure, and third-party integrations.
 
 ---
 
@@ -27,6 +30,9 @@ enterprise quality workflows.
 
 **Stack:** NestJS · Next.js · TypeScript · PostgreSQL · TypeORM · MUI · GCP
 
+![SEI Dashboard](assets/sei-dashboard.png)
+![SEI Task Management](assets/sei-tasks.png)
+
 ---
 
 ### SIM — Integrated Measurement System
@@ -40,11 +46,15 @@ for enterprise clients.
 
 **Stack:** NestJS · Next.js · TypeScript · PostgreSQL · TypeORM · MUI · GCP
 
+![SIM Dashboard](assets/sim-dashboard.png)
+![SIM Indicators](assets/sim-indicators.png)
+
 ---
 
 ### Payment Service
 A standalone microservice that handles all billing logic for both SEI and SIM,
-decoupled from the main applications to allow independent scaling and maintenance.
+decoupled from the main applications to allow independent scaling and
+maintenance.
 
 **Key features:**
 - Recurring subscription flows with MercadoPago pre-approval
@@ -53,12 +63,13 @@ decoupled from the main applications to allow independent scaling and maintenanc
 
 **Stack:** NestJS · TypeScript · MercadoPago API · PostgreSQL · GCP Cloud Run
 
+![Payment Service](assets/payment-service.png)
+
 ---
 
 ## Infrastructure
 
-All systems are deployed on Google Cloud Platform, configured and maintained
-independently:
+All systems are deployed on Google Cloud Platform:
 
 | Service | Usage |
 |---|---|
