@@ -87,7 +87,8 @@ All systems are deployed on Google Cloud Platform:
   bottlenecks when rendering lists of 5,000+ rows
 - **Webhook architecture:** Real-time payment event processing with
   idempotency handling
-- **Zero unplanned downtime** across all production deployments
+- **Ensuring production stability** Independently set up and deployed the full GCP infrastructure (Cloud Run, Cloud SQL,
+Cloud Storage, Cloud Scheduler), ensuring production stability
 
 ---
 
