@@ -26,7 +26,7 @@ enterprise quality workflows.
 **Key modules:**
 - Meeting minutes with participant tracking and digital sign-off
 - Task management with assignment, deadlines, and status tracking
-- Role-based access control (admin / editor / viewer) via Auth0
+- Role-based access control (admin / processLeader / collaborator) via Auth0
 
 **Stack:** NestJS · Next.js · TypeScript · PostgreSQL · TypeORM · MUI · GCP
 
